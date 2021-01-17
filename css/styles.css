@@ -7,7 +7,22 @@
 nav {
     padding: 20px 10px;
     background-color: aquamarine;
-    border-radius: 10x;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+nav .nav-links {
+    display: flex;
+    flex-direction: row;
+}
+
+nav .nav-links a {
+    text-decoration: none;
+    color: white;
+    padding: 12px 16px;
 }
 
 footer {}
