@@ -6,12 +6,15 @@
 
 nav {
     padding: 20px 10px;
-    background-color: aquamarine;
-    border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
+    position: relative;
+    background-color: rgb(18, 102, 74);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav form {
+    display: flex;
 }
 
 nav .nav-links {
@@ -22,15 +25,28 @@ nav .nav-links {
 nav .nav-links a {
     text-decoration: none;
     color: white;
+    display: inline;
     padding: 12px 16px;
+    text-transform: capitalize;
 }
 
 footer {
     position: fixed;
     bottom: 0;
     left: 0;
-    background-color: aquamarine;
+    background-color: rgb(18, 102, 74);
     width: 100%;
     text-align: center;
     color: aliceblue;
+}
+
+@media only screen and (max-width:590px) {
+    nav {
+        display: flex;
+        flex-direction: column;
+    }
+    nav .nav-links {
+        display: flex;
+        flex-direction: column;
+    }
 }
