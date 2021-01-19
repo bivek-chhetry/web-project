@@ -31,6 +31,8 @@ nav .nav-links a {
 }
 
 footer {
+    text-align: center;
+    font-size: 10px;
     position: fixed;
     bottom: 0;
     left: 0;
@@ -38,6 +40,7 @@ footer {
     width: 100%;
     text-align: center;
     color: aliceblue;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 @media only screen and (max-width:590px) {
