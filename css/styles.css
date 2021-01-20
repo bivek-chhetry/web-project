@@ -11,10 +11,51 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: all .2s ease;
+    -webkit-transition: all .2s ease;
+    -moz-transition: all .2s ease;
+    -ms-transition: all .2s ease;
+    -o-transition: all .2s ease;
 }
 
 nav form {
     display: flex;
+}
+
+nav form .search {
+    width: 90px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 12px;
+    background-color: white;
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    padding: 5px 10px;
+    transition: width 0.4s ease-in-out;
+}
+
+nav form button {
+    cursor: pointer;
+    width: 40px;
+    background-color: #003893;
+    color: #fff;
+    border: none;
+    outline: none;
+    opacity: .7;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+nav form button:hover {
+    opacity: 1;
+}
+
+nav form .search:focus {
+    width: 80%;
 }
 
 nav .nav-links {
@@ -30,16 +71,33 @@ nav .nav-links a {
     text-transform: capitalize;
 }
 
+section:nth-child(2) {
+    margin: 0;
+    padding: 0;
+}
+
 section .parallax {
+    position: relative;
     height: 400px;
     background-position: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: linear-gradient(#dc143c, #003893, #ffffff);
+    background-image: url('../img/4.jpg');
 }
 
-section .parallax h1 {
+section .parallax .parallax-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+}
+
+section .parallax .parallax-content h1 {
     text-align: center;
     color: #ffffff;
 }
@@ -63,7 +121,7 @@ section .gallery {
 }
 
 section .gallery .image-content {
-    width: 350px;
+    width: 300px;
     margin: 5px;
     overflow: hidden;
     cursor: pointer;
@@ -84,7 +142,6 @@ section .gallery .image-content img {
 }
 
 section .gallery .image-content img:hover {
-    z-index: 2;
     transform: scale(1.5);
     -webkit-transform: scale(1.5);
     -moz-transform: scale(1.5);
@@ -92,12 +149,76 @@ section .gallery .image-content img:hover {
     -o-transform: scale(1.5);
 }
 
-footer {
+#sec4 {
+    padding: 30px 20px;
+    background: linear-gradient(#003893, #fff);
+}
+
+section .form-header h1 {
     text-align: center;
-    font-size: 10px;
-    position: fixed;
-    bottom: 0;
-    left: 0;
+    color: #ffffff;
+}
+
+section form {}
+
+section form label {
+    text-transform: capitalize;
+    color: white;
+    padding: 5px 10px;
+    display: inline-block;
+}
+
+section form .form-input {
+    width: 100%;
+    padding: 5px 10px;
+    outline: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    transition: .2s;
+    -webkit-transition: .2s;
+    -moz-transition: .2s;
+    -ms-transition: .2s;
+    -o-transition: .2s;
+}
+
+section form textarea:focus,
+section form .form-input:focus {
+    border: 1px solid #555;
+}
+
+section form textarea {
+    width: 100%;
+    height: 150px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    font-size: 16px;
+    resize: vertical;
+}
+
+section form .btn {
+    float: right;
+    border: 0;
+    padding: 5px 12px;
+    background-color: #003893;
+    color: #fff;
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+section form .btn:hover {
+    opacity: 1;
+}
+
+footer {
+    padding: 20px 15px;
+    text-align: center;
     background-color: rgb(18, 102, 74);
     width: 100%;
     text-align: center;
@@ -105,7 +226,11 @@ footer {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-@media only screen and (max-width:590px) {
+footer p {
+    font-size: 16px;
+}
+
+@media only screen and (max-width:660px) {
     nav {
         display: flex;
         flex-direction: column;
