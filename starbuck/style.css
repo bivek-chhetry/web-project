@@ -34,10 +34,13 @@ header .logo{
 header ul{
     position: relative;
     display: flex;
+    justify-content: center;
+    align-items: center;
 
 }
 header ul li{
 list-style: none;
+margin-left:20px ;
 }
 header ul li a{
     display: inline-block;
@@ -45,9 +48,14 @@ header ul li a{
     font-weight: 400;
     margin-left: 20px;
     text-decoration: none;
+    transition: 0.4s;
+  
 }
 header ul li a:hover{
-    color: #017143;
+    transform: translateY(-10px);
+    color:#017143;
+    
+
     
 
 }
