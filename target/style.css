@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'krona one',sans-serif;
+}
+h2{
+    color: seagreen;
+ 
+}
+p{
+    font-size: 20px;
+    padding-top: 30px;
+    color: sienna;
+}
+.container img{
+    width: 30%;
+}
+img{
+    /* background-color: sienna; */
+    /* transition: 0.5s;
+    max-width: 60px; */
+
+
+}
+img:hover{
+    transform: translateY(-15px);
+}
