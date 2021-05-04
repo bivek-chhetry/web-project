@@ -52,16 +52,14 @@ header ul li a:hover{
     background-color: #ffff;
     color: #2b1055;
 }
-div .content{
-    background-color: #ffff;
-}
+
 .detail{
-    background-color: #fff;
-    padding: 89px;
-    margin: 157px;
+    background-color: aliceblue;
+    padding: 66px;  
     display: none;
-   
+  
 }
 :target{
     display: block;
+    
 }
